@@ -60,8 +60,8 @@ function App() {
                 </section>
             </header>
 
-            <div className={`page-content-wr ${showEmailBody.show ? "pageContentGrid" : ""}`}>
-                <aside className="aside-ec-list">
+            <div className={`pageContent ${showEmailBody.show ? "pageContentGrid" : ""}`}>
+                <aside className="asideList">
                     <EmailCardList 
                         showEmailBody={showEmailBody}
                         setShowEmailBody={setShowEmailBody}
@@ -70,7 +70,7 @@ function App() {
                 </aside>
                 {
                     showEmailBody.show &&
-                    <main className="main-emailBody">
+                    <main className="mainEmailBody">
                         <EmailBody />
                     </main>
                 }
