@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    /* fonts */
+    --nunito: 'Nunito', sans-serif;
+
+    /* colors */
+    --accent: #e54065;
+    --white: #ffffff;
+    --black: #000000;
+    --background: #f4f5f9;
+    --border: #cfd2dc;
+    --text: #636363;
+    --filter-btn: #e1e4ea;
+    --card-background: #ffffff;
+    --read-background: #f2f2f2;
+
+    /* border radius */
+    --br-sq: 7px;
+    --br-cr: 2rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f4f5f9;
+  color: #636363;
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+  padding: 1.5rem 2rem 0 2rem;
+}
+.pageGap {
+  gap: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headerSection {
+  color: #000000;
+  gap: 0.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerSection > h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 0.25rem;
 }
 
-.App-link {
-  color: #61dafb;
+.headerButton {
+  background-color: transparent;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid transparent;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerButton:hover {
+  transform: scale(1.05); 
+}
+
+.headerButtonOnselected {
+  background-color: #e1e4ea;
+  border-color: #cfd2dc;
+}
+
+.pageContentGrid{
+  display: grid;
+  grid-template-columns: 33% 67%;
+  gap: 1.5rem;
+}
+.flexRow,
+.flexColumn {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flexRow {
+    flex-direction: row;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.flexAlignSpaceBetween {
+    justify-content: space-between;
+}
+
+.flexAlignCenter {
+    align-items: center;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

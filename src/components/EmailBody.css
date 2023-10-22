@@ -1,0 +1,56 @@
+.emailBodyWr {
+    min-height: 90vh;
+    padding: 2rem 3.5rem 2rem 1.75rem  ;
+}
+
+.emailBodyWr.currentEmailWr,
+.emailBody {
+    gap: 1.25rem;
+}
+
+.emailBody {
+    width: 90%;
+}
+
+.emailBodyButton {
+    background-color: #e54065;
+    color: #ffffff;
+    height: fit-content;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+}
+
+.emailBodyButton:hover {
+    cursor: pointer;
+    transform: scale(0.97);
+}
+
+.emailBodyContent > div > p {
+    text-align: justify;
+    text-justify: distribute;
+    margin: 0.75rem 0;
+}
+.avatar {
+    background-color: #e54065;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-height: 3rem;
+    min-width: 3rem;
+    border-radius: 50%;
+}
+
+.currentEmailWr {
+    background-color: #ffffff;
+    border: 1px solid #cfd2dc;
+    border-radius: 7px;
+    gap: 1rem;
+}
+
+.emailFavorite {
+    color: #e54065;
+    font-weight: bold;
+    margin-left: 2rem;
+}

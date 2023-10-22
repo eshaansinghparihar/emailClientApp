@@ -1,0 +1,30 @@
+.emailCard {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    margin: 0 0.25rem 1rem 0;
+}
+
+.emailCard:hover {
+    transform: scale(1.02);
+}
+
+.currentEmailCard {
+    border-color: #e54065;
+}
+
+.emailCardRead {
+    background-color: #f2f2f2;
+}
+
+.emailCardContent {
+    gap: 0.25rem;
+    width: 85%;
+}
+
+.emailCardContent > p {
+    display: block;
+    width: 98%;
+    white-space: nowrap;
+    overflow-x: hidden !important;
+    text-overflow: ellipsis;
+}
